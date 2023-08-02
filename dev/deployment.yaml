@@ -5,15 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: ctc-rcs-op
+      app: ctc-rcs-op-server
   replicas: 2
   template:
     metadata:
       labels:
-        app: ctc-rcs-op
+        app: ctc-rcs-op-server
     spec:
       containers:
-      - name: ctc-rcs-op
+      - name: ctc-rcs-op-server
         image: nginx:latest
         ports:
         - containerPort: 80
