@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: ctc-rcs-op
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: ctc-rcs-op
   replicas: 2
   template:
     metadata:
       labels:
-        app: myapp
+        app: ctc-rcs-op
     spec:
       containers:
-      - name: myapp
+      - name: ctc-rcs-op
         image: nginx:latest
         ports:
         - containerPort: 80
